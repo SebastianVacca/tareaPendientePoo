@@ -1,5 +1,10 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        var task = new Tarea("Hacer aseo", 1);
+
+        System.out.println(task.showState());
+        task.setMarkCompleted();
+
+        System.out.println(task.showState());
     }
 }
